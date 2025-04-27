@@ -35,8 +35,8 @@ def recommend(movie):
 st.header("Movie Recommendation System")
 
 # Load movie list and similarity data from pickle files
-movies = pickle.load(open(r'.\fpro\movie_list.pkl', 'rb'))
-similarity = pickle.load(open(r'.\fpro\similarity.pkl', 'rb'))
+movies = pickle.load(open(r'./fpro/movie_list.pkl', 'rb'))
+similarity = pickle.load(open(r'./fpro/similarity.pkl', 'rb'))
 
 # Extract movie titles for selection
 movie_list = movies['title'].values
