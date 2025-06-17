@@ -34,7 +34,7 @@ KIDS_KEYWORDS = [
     'princess', 'fairy', 'magic', 'adventure', 'animal', 'dinosaur'
 ]
 
-# Define TMDB API key and headers here (update these with your actual keys)
+#  TMDB API key and headers here 
 TMDB_API_KEY = "a473dd8a2855c7017600f52110831b44"
 TMDB_ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNDczZGQ4YTI4NTVjNzAxNzYwMGY1MjExMDgzMWI0NCIsIm5iZiI6MTc0NjY1MDgzMC4zOSwic3ViIjoiNjgxYmM2Y2U3ZjI0YWRjNTk4M2VjNGUxIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.oo9QsgwivgWS4lx5R2tyCg0DNRkkE5FfqTdYujfRqYE"
 TMDB_HEADERS = {
