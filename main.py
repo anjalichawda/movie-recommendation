@@ -1,9 +1,16 @@
 import streamlit as st
 import pickle
+from dotenv import load_dotenv
 import os
 from sections.recommendations import recommendations_section, is_kid_friendly  # Import is_kid_friendly
 from sections.trending import trending_section
 from sections.offers import offers_section
+
+#environment variables from .env file
+load_dotenv()
+# Access environment variables
+api_key = os.getenv('API_KEY')
+api_token = os.getenv('API_TOKEN')
 
 # Import CSS from the 'css' folder
 with open("css/styles.css") as f:
@@ -35,8 +42,8 @@ KIDS_KEYWORDS = [
 ]
 
 #  TMDB API key and headers here 
-TMDB_API_KEY = "a473dd8a2855c7017600f52110831b44"
-TMDB_ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNDczZGQ4YTI4NTVjNzAxNzYwMGY1MjExMDgzMWI0NCIsIm5iZiI6MTc0NjY1MDgzMC4zOSwic3ViIjoiNjgxYmM2Y2U3ZjI0YWRjNTk4M2VjNGUxIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.oo9QsgwivgWS4lx5R2tyCg0DNRkkE5FfqTdYujfRqYE"
+TMDB_API_KEY = api_key
+TMDB_ACCESS_TOKEN = api_token
 TMDB_HEADERS = {
     "accept": "application/json",
     "Authorization": f"Bearer {TMDB_API_KEY}"
